@@ -1,0 +1,33 @@
+Question,Answer
+1. What does the app.get() function do in Express.js routing?,The app.get() function in Express.js routing is used to define what should happen when a GET request is made to a specific route. It takes two parameters: the route path and a callback function that specifies the actions to be taken when the request is received.
+2. How many parameters does the callback function in app.get() have?,The callback function in app.get() has 2 parameters: request (req) and response (res).
+3. What does the request object (req) represent in Express.js routing?,"The request object (req) in Express.js routing represents the HTTP request. It contains properties for the request query string, parameters, body, HTTP headers, etc. It provides information about the incoming request made by the client."
+4. What does the response object (res) represent in Express.js routing?,"The response object (res) in Express.js routing represents the HTTP response that the Express app sends when it receives an HTTP request. It is used to send data back to the client, such as HTML, JSON, or other types of responses. The res object has methods like res.send() to send a response to the client."
+5. What does the res.send() function do in Express.js routing?,"The res.send() function in Express.js routing takes an object as input and sends it as the response to the requesting client. In other words, it sends the specified object as the HTTP response."
+6. What does the app.listen() function do in Express.js routing?,"The app.listen() function in Express.js routing binds and listens for connections on the specified host and port. It is used to start the server and make it listen for incoming HTTP requests. The port parameter is the only required parameter, and it specifies the port number on which the server should listen."
+7. What is the required parameter for the app.listen() function?,The required parameter for the app.listen() function is the port number.
+8. What is the purpose of the HTTP GET method?,The purpose of the HTTP GET method is to request the representation of a specific resource by the client. It is used to retrieve data from the server without causing any effect or alteration to the resource.
+9. What is the purpose of the HTTP POST method?,"The purpose of the HTTP POST method is to request the server to accept the data that is enclosed within the request as a new object of the resource identified by the URI. In other words, it is used to send data to the server to create a new resource."
+10. What is the purpose of the HTTP PUT method?,"The purpose of the HTTP PUT method is to request the server to accept the data enclosed within the request as an alteration to the existing object identified by the provided URI. In other words, it is used to update or modify an existing resource on the server."
+11. What is the purpose of the HTTP DELETE method?,The purpose of the HTTP DELETE method is to request the server to delete a specific resource from the destination.
+12. What are Express.js middleware?,"Express.js middleware are different types of functions that are invoked by the Express.js routing layer before the final request handler. They are called middleware because they appear in the middle between an initial request and the final intended route. Middleware functions are always invoked in the order in which they are added. Middleware is commonly used to perform tasks like body parsing for URL-encoded or JSON requests, cookie parsing for basic cookie handling, or even building JavaScript modules on the fly."
+13. In what order are middleware functions invoked in Express.js?,Middleware functions are invoked in the order in which they are added to the stack.
+14. What are some common tasks performed by middleware in Express.js?,"Some common tasks performed by middleware in Express.js include:
+
+1. Body parsing: Middleware can be used to parse the request body, allowing the application to access the data sent by the client in the request.
+
+2. Cookie parsing: Middleware can handle parsing and managing cookies sent by the client, allowing the application to access and manipulate cookie data.
+
+3. Authentication and authorization: Middleware can be used to authenticate and authorize users, ensuring that only authorized users can access certain routes or perform certain actions.
+
+4. Logging: Middleware can log information about incoming requests, such as the request method, URL, and timestamp, for debugging or auditing purposes.
+
+5. Error handling: Middleware can handle errors that occur during the request-response cycle, allowing for custom error messages or error handling logic.
+
+6. Compression: Middleware can compress the response data before sending it to the client, reducing the size of the response and improving performance.
+
+7. Caching: Middleware can implement caching mechanisms to store and serve previously generated responses, reducing the need to regenerate the same response for multiple requests.
+
+8. Rate limiting: Middleware can enforce rate limits on incoming requests, preventing abuse or excessive usage of the application's resources.
+
+These are just a few examples, and there are many other tasks that middleware can perform in Express.js depending on the specific needs of the application."
